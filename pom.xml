@@ -63,10 +63,14 @@
     </dependencyManagement>
 
     <build>
+        <finalName>confsvr</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <mainClass>com.virtushawk.boxappconfsvr.BoxappConfsvrApplication</mainClass>
+                </configuration>
             </plugin>
         </plugins>
     </build>
